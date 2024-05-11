@@ -15,7 +15,19 @@ export type BlockTracker = BaseBlockTracker & {
 export enum NetworkClientType {
   Custom = 'custom',
   Infura = 'infura',
+  Nitro = 'nitro',
 }
+
+/**
+ * A configuration object that can be used to create a client for a custom
+ * nitro network.
+ */
+export type NitroNetworkClientConfiguration = {
+  chainId: Hex;
+  rpcUrl: string;
+  ticker: string;
+  type: NetworkClientType.Nitro;
+};
 
 /**
  * A configuration object that can be used to create a client for a custom
@@ -45,4 +57,5 @@ export type InfuraNetworkClientConfiguration = {
  */
 export type NetworkClientConfiguration =
   | CustomNetworkClientConfiguration
-  | InfuraNetworkClientConfiguration;
+  | InfuraNetworkClientConfiguration
+  | NitroNetworkClientConfiguration;

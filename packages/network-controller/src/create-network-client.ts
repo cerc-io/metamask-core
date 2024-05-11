@@ -70,7 +70,7 @@ export function createNetworkClient(
       if (networkConfig.rpcUrl.includes('/nitro/')) {
         rpcApiMiddleware = createNitroMiddleware({
           // HACK, use the infura key setting for our key.
-          nitroPrivateKey: networkConfig.infuraProjectId,
+          nitroPrivateKey: '111b7500bdce494d6f4bcfe8c2a0dde2ef92f751d9070fac6475dbd6d8021b3f',
           rpcUrl: networkConfig.rpcUrl,
         });
       } else {

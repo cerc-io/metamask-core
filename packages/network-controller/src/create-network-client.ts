@@ -31,6 +31,7 @@ import type {
   Provider,
 } from './types';
 import { NetworkClientType } from './types';
+import {createNitroMiddleware} from "@cerc-nitro/eth-json-rpc-nitro";
 
 const SECOND = 1000;
 
@@ -54,19 +55,32 @@ export type NetworkClient = {
 export function createNetworkClient(
   networkConfig: NetworkClientConfiguration,
 ): NetworkClient {
-  const rpcApiMiddleware =
-    networkConfig.type === NetworkClientType.Infura
-      ? createInfuraMiddleware({
-          network: networkConfig.network,
-          projectId: networkConfig.infuraProjectId,
-          maxAttempts: 5,
-          source: 'metamask',
-        })
-      : createFetchMiddleware({
+  let rpcApiMiddleware;
+  switch (networkConfig.type) {
+    case NetworkClientType.Infura:
+      rpcApiMiddleware = createInfuraMiddleware({
+        network: networkConfig.network,
+        projectId: networkConfig.infuraProjectId,
+        maxAttempts: 5,
+        source: 'metamask',
+      });
+      break;
+    case NetworkClientType.Custom:
+    default:
+      if (networkConfig.rpcUrl.includes('/nitro/')) {
+        rpcApiMiddleware = createNitroMiddleware({
+          // HACK, use the infura key setting for our key.
+          nitroPrivateKey: '111b7500bdce494d6f4bcfe8c2a0dde2ef92f751d9070fac6475dbd6d8021b3f',
+          rpcUrl: networkConfig.rpcUrl,
+        });
+      } else {
+        rpcApiMiddleware = createFetchMiddleware({
           btoa: global.btoa,
           fetch: global.fetch,
           rpcUrl: networkConfig.rpcUrl,
         });
+      }
+  }
 
   const rpcProvider = providerFromMiddleware(rpcApiMiddleware);
 

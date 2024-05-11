@@ -19,6 +19,7 @@ export type InfuraNetworkType =
 export const NetworkType = {
   ...InfuraNetworkType,
   rpc: 'rpc',
+  nitro: 'nitro',
 } as const;
 
 export type NetworkType = (typeof NetworkType)[keyof typeof NetworkType];

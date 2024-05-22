@@ -99,6 +99,7 @@ export type NetworkConfiguration = {
   chainId: Hex;
   ticker: string;
   nickname?: string;
+  nitroAccount?: string;
   rpcPrefs?: {
     blockExplorerUrl: string;
   };
@@ -1219,9 +1220,10 @@ export class NetworkController extends BaseController<
   ): Promise<string> {
     const sanitizedNetworkConfiguration: NetworkConfiguration = pick(
       networkConfiguration,
-      ['rpcUrl', 'chainId', 'ticker', 'nickname', 'rpcPrefs'],
+      ['rpcUrl', 'chainId', 'ticker', 'nickname', 'rpcPrefs', 'nitroAccount'],
     );
-    const { rpcUrl, chainId, ticker } = sanitizedNetworkConfiguration;
+    const { rpcUrl, chainId, ticker, nitroAccount } =
+      sanitizedNetworkConfiguration;
 
     assertIsStrictHexString(chainId);
     if (!isSafeChainId(chainId)) {
@@ -1276,7 +1278,9 @@ export class NetworkController extends BaseController<
       customNetworkClientRegistry[networkClientId];
     const shouldDestroyExistingNetworkClient =
       existingAutoManagedNetworkClient &&
-      existingAutoManagedNetworkClient.configuration.chainId !== chainId;
+      (existingAutoManagedNetworkClient.configuration.chainId !== chainId ||
+        existingAutoManagedNetworkClient.configuration.nitroAccount !==
+          nitroAccount);
     if (shouldDestroyExistingNetworkClient) {
       existingAutoManagedNetworkClient.destroy();
     }
@@ -1289,6 +1293,7 @@ export class NetworkController extends BaseController<
           type: NetworkClientType.Custom,
           chainId,
           rpcUrl,
+          nitroAccount,
           ticker,
         });
     }
@@ -1523,6 +1528,7 @@ export class NetworkController extends BaseController<
           type: NetworkClientType.Custom,
           chainId: networkConfiguration.chainId,
           rpcUrl: networkConfiguration.rpcUrl,
+          nitroAccount: networkConfiguration.nitroAccount,
           ticker: networkConfiguration.ticker,
         };
         return [

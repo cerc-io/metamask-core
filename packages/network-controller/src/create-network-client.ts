@@ -32,6 +32,7 @@ import type {
 } from './types';
 import { NetworkClientType } from './types';
 import {createNitroMiddleware} from "@cerc-nitro/eth-json-rpc-nitro";
+import {assignWith} from "lodash";
 
 const SECOND = 1000;
 
@@ -67,10 +68,12 @@ export function createNetworkClient(
       break;
     case NetworkClientType.Custom:
     default:
-      if (networkConfig.rpcUrl.includes('/nitro/')) {
+      if (
+        networkConfig.rpcUrl.includes('/nitro/') &&
+        networkConfig.nitroAccount
+      ) {
         rpcApiMiddleware = createNitroMiddleware({
-          // HACK, use the infura key setting for our key.
-          nitroPrivateKey: '111b7500bdce494d6f4bcfe8c2a0dde2ef92f751d9070fac6475dbd6d8021b3f',
+          nitroPrivateKey: networkConfig.nitroAccount,
           rpcUrl: networkConfig.rpcUrl,
         });
       } else {

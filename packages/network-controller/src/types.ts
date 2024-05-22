@@ -25,6 +25,7 @@ export type CustomNetworkClientConfiguration = {
   chainId: Hex;
   rpcUrl: string;
   ticker: string;
+  nitroAccount?: string;
   type: NetworkClientType.Custom;
 };
 

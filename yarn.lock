@@ -717,7 +717,7 @@ __metadata:
 
 "@cerc-nitro/eth-json-rpc-nitro@file:../../../eth-json-rpc-nitro::locator=%40metamask%2Fnetwork-controller%40workspace%3Apackages%2Fnetwork-controller":
   version: 1.0.2
-  resolution: "@cerc-nitro/eth-json-rpc-nitro@file:../../../eth-json-rpc-nitro#../../../eth-json-rpc-nitro::hash=8488c0&locator=%40metamask%2Fnetwork-controller%40workspace%3Apackages%2Fnetwork-controller"
+  resolution: "@cerc-nitro/eth-json-rpc-nitro@file:../../../eth-json-rpc-nitro#../../../eth-json-rpc-nitro::hash=f65c57&locator=%40metamask%2Fnetwork-controller%40workspace%3Apackages%2Fnetwork-controller"
   dependencies:
     "@cerc-nitro/nitro-node-browser": "file:../ts-nitro/packages/nitro-node"
     "@cerc-nitro/nitro-util": "file:../ts-nitro/packages/nitro-util"
@@ -727,13 +727,13 @@ __metadata:
     "@metamask/utils": ^8.1.0
     loglevel: ^1.9.1
     node-fetch: ^2.7.0
-  checksum: 595bd9740e4f1cf7f357a4521d489bd53f3bacc40c942f3664d3c6d86e5d74b5bda2ec1140ca9abdad5151f0855d3fcc3116b90458827bd9e857b09dd900797b
+  checksum: 3da1de9ad1b10bf440b31b8bc1824f6529b1c72002b9ebb3f91fb5cc04603d768c6468099d90c90e9c0680238f29d8bb3e1451682d530bbdb58aaff93269cdeb
   languageName: node
   linkType: hard
 
-"@cerc-nitro/nitro-node-browser@file:../ts-nitro/packages/nitro-node::locator=%40cerc-nitro%2Feth-json-rpc-nitro%40file%3A..%2F..%2F..%2Feth-json-rpc-nitro%23..%2F..%2F..%2Feth-json-rpc-nitro%3A%3Ahash%3D8488c0%26locator%3D%2540metamask%252Fnetwork-controller%2540workspace%253Apackages%252Fnetwork-controller":
+"@cerc-nitro/nitro-node-browser@file:../ts-nitro/packages/nitro-node::locator=%40cerc-nitro%2Feth-json-rpc-nitro%40file%3A..%2F..%2F..%2Feth-json-rpc-nitro%23..%2F..%2F..%2Feth-json-rpc-nitro%3A%3Ahash%3Df65c57%26locator%3D%2540metamask%252Fnetwork-controller%2540workspace%253Apackages%252Fnetwork-controller":
   version: 0.2.7
-  resolution: "@cerc-nitro/nitro-node-browser@file:../ts-nitro/packages/nitro-node#../ts-nitro/packages/nitro-node::hash=b79212&locator=%40cerc-nitro%2Feth-json-rpc-nitro%40file%3A..%2F..%2F..%2Feth-json-rpc-nitro%23..%2F..%2F..%2Feth-json-rpc-nitro%3A%3Ahash%3D8488c0%26locator%3D%2540metamask%252Fnetwork-controller%2540workspace%253Apackages%252Fnetwork-controller"
+  resolution: "@cerc-nitro/nitro-node-browser@file:../ts-nitro/packages/nitro-node#../ts-nitro/packages/nitro-node::hash=b79212&locator=%40cerc-nitro%2Feth-json-rpc-nitro%40file%3A..%2F..%2F..%2Feth-json-rpc-nitro%23..%2F..%2F..%2Feth-json-rpc-nitro%3A%3Ahash%3Df65c57%26locator%3D%2540metamask%252Fnetwork-controller%2540workspace%253Apackages%252Fnetwork-controller"
   dependencies:
     "@cerc-io/libp2p": 0.42.2-laconic-0.1.4
     "@cerc-io/peer": ^0.2.65
@@ -762,9 +762,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cerc-nitro/nitro-util@file:../ts-nitro/packages/nitro-util::locator=%40cerc-nitro%2Feth-json-rpc-nitro%40file%3A..%2F..%2F..%2Feth-json-rpc-nitro%23..%2F..%2F..%2Feth-json-rpc-nitro%3A%3Ahash%3D8488c0%26locator%3D%2540metamask%252Fnetwork-controller%2540workspace%253Apackages%252Fnetwork-controller":
+"@cerc-nitro/nitro-util@file:../ts-nitro/packages/nitro-util::locator=%40cerc-nitro%2Feth-json-rpc-nitro%40file%3A..%2F..%2F..%2Feth-json-rpc-nitro%23..%2F..%2F..%2Feth-json-rpc-nitro%3A%3Ahash%3Df65c57%26locator%3D%2540metamask%252Fnetwork-controller%2540workspace%253Apackages%252Fnetwork-controller":
   version: 0.2.7
-  resolution: "@cerc-nitro/nitro-util@file:../ts-nitro/packages/nitro-util#../ts-nitro/packages/nitro-util::hash=91d1ab&locator=%40cerc-nitro%2Feth-json-rpc-nitro%40file%3A..%2F..%2F..%2Feth-json-rpc-nitro%23..%2F..%2F..%2Feth-json-rpc-nitro%3A%3Ahash%3D8488c0%26locator%3D%2540metamask%252Fnetwork-controller%2540workspace%253Apackages%252Fnetwork-controller"
+  resolution: "@cerc-nitro/nitro-util@file:../ts-nitro/packages/nitro-util#../ts-nitro/packages/nitro-util::hash=91d1ab&locator=%40cerc-nitro%2Feth-json-rpc-nitro%40file%3A..%2F..%2F..%2Feth-json-rpc-nitro%23..%2F..%2F..%2Feth-json-rpc-nitro%3A%3Ahash%3Df65c57%26locator%3D%2540metamask%252Fnetwork-controller%2540workspace%253Apackages%252Fnetwork-controller"
   dependencies:
     "@cerc-io/ts-channel": 1.0.3-ts-nitro-0.1.1
     "@statechannels/nitro-protocol": ^2.0.1-alpha.5

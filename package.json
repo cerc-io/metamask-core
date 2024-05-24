@@ -42,7 +42,8 @@
     "pre-push": "yarn lint"
   },
   "resolutions": {
-    "tsup@^8.0.2": "patch:tsup@npm%3A8.0.2#./.yarn/patches/tsup-npm-8.0.2-86e40f68a7.patch"
+    "tsup@^8.0.2": "patch:tsup@npm%3A8.0.2#./.yarn/patches/tsup-npm-8.0.2-86e40f68a7.patch",
+    "@cerc-nitro/nitro-util@^0.2.7": "file:../ts-nitro/packages/nitro-util"
   },
   "devDependencies": {
     "@babel/core": "^7.23.5",

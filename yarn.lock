@@ -663,8 +663,8 @@ __metadata:
   linkType: hard
 
 "@cerc-io/peer@npm:^0.2.65":
-  version: 0.2.86
-  resolution: "@cerc-io/peer@npm:0.2.86::__archiveUrl=https%3A%2F%2Fgit.vdb.to%2Fapi%2Fpackages%2Fcerc-io%2Fnpm%2F%2540cerc-io%252Fpeer%2F-%2F0.2.86%2Fpeer-0.2.86.tgz"
+  version: 0.2.90
+  resolution: "@cerc-io/peer@npm:0.2.90::__archiveUrl=https%3A%2F%2Fgit.vdb.to%2Fapi%2Fpackages%2Fcerc-io%2Fnpm%2F%2540cerc-io%252Fpeer%2F-%2F0.2.90%2Fpeer-0.2.90.tgz"
   dependencies:
     "@cerc-io/libp2p": ^0.42.2-laconic-0.1.4
     "@cerc-io/prometheus-metrics": 1.1.4
@@ -690,7 +690,7 @@ __metadata:
     uint8arrays: ^4.0.3
     unique-names-generator: ^4.7.1
     yargs: ^17.0.1
-  checksum: fd3cc1a2e97e890360f2dd81221228162d9ec6fb2bdeff2b00e7f8cca00592bd279de6340283d4c834e27a9c2a0b9146b8dad97350122bf890d6f1a57f5f8255
+  checksum: 3f58ac16401ed3c73de89008c857402b72b91095e04082d90d3802e5a27d1f6e60604c1aa469a6b325353d37a7aef0e4865de7c90b120b337b2375ca209c5776
   languageName: node
   linkType: hard
 
@@ -717,7 +717,7 @@ __metadata:
 
 "@cerc-nitro/eth-json-rpc-nitro@file:../../../eth-json-rpc-nitro::locator=%40metamask%2Fnetwork-controller%40workspace%3Apackages%2Fnetwork-controller":
   version: 1.0.2
-  resolution: "@cerc-nitro/eth-json-rpc-nitro@file:../../../eth-json-rpc-nitro#../../../eth-json-rpc-nitro::hash=f65c57&locator=%40metamask%2Fnetwork-controller%40workspace%3Apackages%2Fnetwork-controller"
+  resolution: "@cerc-nitro/eth-json-rpc-nitro@file:../../../eth-json-rpc-nitro#../../../eth-json-rpc-nitro::hash=15b0da&locator=%40metamask%2Fnetwork-controller%40workspace%3Apackages%2Fnetwork-controller"
   dependencies:
     "@cerc-nitro/nitro-node-browser": "file:../ts-nitro/packages/nitro-node"
     "@cerc-nitro/nitro-util": "file:../ts-nitro/packages/nitro-util"
@@ -727,13 +727,13 @@ __metadata:
     "@metamask/utils": ^8.1.0
     loglevel: ^1.9.1
     node-fetch: ^2.7.0
-  checksum: 3da1de9ad1b10bf440b31b8bc1824f6529b1c72002b9ebb3f91fb5cc04603d768c6468099d90c90e9c0680238f29d8bb3e1451682d530bbdb58aaff93269cdeb
+  checksum: b1244fc4ff4a889720789ae7eb852ec2620edd89e84b004aa6810796f157067b9a80138078873af013d04f1ba093668ca0c6a9904895d0024d3abfa8946682ca
   languageName: node
   linkType: hard
 
-"@cerc-nitro/nitro-node-browser@file:../ts-nitro/packages/nitro-node::locator=%40cerc-nitro%2Feth-json-rpc-nitro%40file%3A..%2F..%2F..%2Feth-json-rpc-nitro%23..%2F..%2F..%2Feth-json-rpc-nitro%3A%3Ahash%3Df65c57%26locator%3D%2540metamask%252Fnetwork-controller%2540workspace%253Apackages%252Fnetwork-controller":
+"@cerc-nitro/nitro-node-browser@file:../ts-nitro/packages/nitro-node::locator=%40cerc-nitro%2Feth-json-rpc-nitro%40file%3A..%2F..%2F..%2Feth-json-rpc-nitro%23..%2F..%2F..%2Feth-json-rpc-nitro%3A%3Ahash%3D15b0da%26locator%3D%2540metamask%252Fnetwork-controller%2540workspace%253Apackages%252Fnetwork-controller":
   version: 0.2.7
-  resolution: "@cerc-nitro/nitro-node-browser@file:../ts-nitro/packages/nitro-node#../ts-nitro/packages/nitro-node::hash=b79212&locator=%40cerc-nitro%2Feth-json-rpc-nitro%40file%3A..%2F..%2F..%2Feth-json-rpc-nitro%23..%2F..%2F..%2Feth-json-rpc-nitro%3A%3Ahash%3Df65c57%26locator%3D%2540metamask%252Fnetwork-controller%2540workspace%253Apackages%252Fnetwork-controller"
+  resolution: "@cerc-nitro/nitro-node-browser@file:../ts-nitro/packages/nitro-node#../ts-nitro/packages/nitro-node::hash=b79212&locator=%40cerc-nitro%2Feth-json-rpc-nitro%40file%3A..%2F..%2F..%2Feth-json-rpc-nitro%23..%2F..%2F..%2Feth-json-rpc-nitro%3A%3Ahash%3D15b0da%26locator%3D%2540metamask%252Fnetwork-controller%2540workspace%253Apackages%252Fnetwork-controller"
   dependencies:
     "@cerc-io/libp2p": 0.42.2-laconic-0.1.4
     "@cerc-io/peer": ^0.2.65
@@ -762,9 +762,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cerc-nitro/nitro-util@file:../ts-nitro/packages/nitro-util::locator=%40cerc-nitro%2Feth-json-rpc-nitro%40file%3A..%2F..%2F..%2Feth-json-rpc-nitro%23..%2F..%2F..%2Feth-json-rpc-nitro%3A%3Ahash%3Df65c57%26locator%3D%2540metamask%252Fnetwork-controller%2540workspace%253Apackages%252Fnetwork-controller":
+"@cerc-nitro/nitro-util@file:../ts-nitro/packages/nitro-util::locator=%40cerc-nitro%2Feth-json-rpc-nitro%40file%3A..%2F..%2F..%2Feth-json-rpc-nitro%23..%2F..%2F..%2Feth-json-rpc-nitro%3A%3Ahash%3D15b0da%26locator%3D%2540metamask%252Fnetwork-controller%2540workspace%253Apackages%252Fnetwork-controller":
   version: 0.2.7
-  resolution: "@cerc-nitro/nitro-util@file:../ts-nitro/packages/nitro-util#../ts-nitro/packages/nitro-util::hash=91d1ab&locator=%40cerc-nitro%2Feth-json-rpc-nitro%40file%3A..%2F..%2F..%2Feth-json-rpc-nitro%23..%2F..%2F..%2Feth-json-rpc-nitro%3A%3Ahash%3Df65c57%26locator%3D%2540metamask%252Fnetwork-controller%2540workspace%253Apackages%252Fnetwork-controller"
+  resolution: "@cerc-nitro/nitro-util@file:../ts-nitro/packages/nitro-util#../ts-nitro/packages/nitro-util::hash=91d1ab&locator=%40cerc-nitro%2Feth-json-rpc-nitro%40file%3A..%2F..%2F..%2Feth-json-rpc-nitro%23..%2F..%2F..%2Feth-json-rpc-nitro%3A%3Ahash%3D15b0da%26locator%3D%2540metamask%252Fnetwork-controller%2540workspace%253Apackages%252Fnetwork-controller"
   dependencies:
     "@cerc-io/ts-channel": 1.0.3-ts-nitro-0.1.1
     "@statechannels/nitro-protocol": ^2.0.1-alpha.5
@@ -779,9 +779,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cerc-nitro/nitro-util@npm:^0.2.7":
+"@cerc-nitro/nitro-util@file:../ts-nitro/packages/nitro-util::locator=%40metamask%2Fcore-monorepo%40workspace%3A.":
   version: 0.2.7
-  resolution: "@cerc-nitro/nitro-util@npm:0.2.7::__archiveUrl=http%3A%2F%2Fgitea.local%3A3000%2Fapi%2Fpackages%2Fcerc-io%2Fnpm%2F%2540cerc-nitro%252Fnitro-util%2F-%2F0.2.7%2Fnitro-util-0.2.7.tgz"
+  resolution: "@cerc-nitro/nitro-util@file:../ts-nitro/packages/nitro-util#../ts-nitro/packages/nitro-util::hash=91d1ab&locator=%40metamask%2Fcore-monorepo%40workspace%3A."
   dependencies:
     "@cerc-io/ts-channel": 1.0.3-ts-nitro-0.1.1
     "@statechannels/nitro-protocol": ^2.0.1-alpha.5
@@ -792,7 +792,7 @@ __metadata:
     json-bigint: ^1.0.0
     lodash: ^4.17.21
     uint8arrays: ^4.0.3
-  checksum: 3769bce3f9ac356be10ee8b64fb938ce12e37169ee24ec92e514529d4412830cf7e4bee7601e158db94cfef58a4ae66826b4316c11fd8d36f6d68da1b5f65007
+  checksum: 220a27337c89f566acf157940f615c93454ea8c96186336395388e853ae43798203cefeae6f13cc9e6d1a58e138ae4835aae36e6d8758b5a3b0a312d6a0d118b
   languageName: node
   linkType: hard
 
@@ -2449,17 +2449,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@libp2p/interface@npm:^1.0.0, @libp2p/interface@npm:^1.3.1":
-  version: 1.3.1
-  resolution: "@libp2p/interface@npm:1.3.1"
+"@libp2p/interface@npm:^1.0.0, @libp2p/interface@npm:^1.4.0":
+  version: 1.4.0
+  resolution: "@libp2p/interface@npm:1.4.0"
   dependencies:
-    "@multiformats/multiaddr": ^12.2.1
+    "@multiformats/multiaddr": ^12.2.3
     it-pushable: ^3.2.3
     it-stream-types: ^2.0.1
     multiformats: ^13.1.0
     progress-events: ^1.0.0
     uint8arraylist: ^2.4.8
-  checksum: c7f66fad32edc05ab66508f549f6f720f0d8c63d2f882cdf0ba53476ac79bcf8cb1c37d5a0932ba3a7533cd259e55b485daef0a75a992db0ef27bb6f0b2fa7e7
+  checksum: 1bf66951710673535184686b80eaf86af0e430cbf11c282b3c2df0a01a6b3dcb757c36df9dbd83e0d9f5de4693633c581a3a5722aad17c2603fcb64e24798b75
   languageName: node
   linkType: hard
 
@@ -2515,15 +2515,15 @@ __metadata:
   linkType: hard
 
 "@libp2p/logger@npm:^4.0.1":
-  version: 4.0.12
-  resolution: "@libp2p/logger@npm:4.0.12"
+  version: 4.0.13
+  resolution: "@libp2p/logger@npm:4.0.13"
   dependencies:
-    "@libp2p/interface": ^1.3.1
-    "@multiformats/multiaddr": ^12.2.1
+    "@libp2p/interface": ^1.4.0
+    "@multiformats/multiaddr": ^12.2.3
     debug: ^4.3.4
     interface-datastore: ^8.2.11
     multiformats: ^13.1.0
-  checksum: 4348cfecd5bc93a68706c66c7958d2600280598d76539f10eb5aa404a550127560106f776be9c721e571d18d8eef3e31cf6ae6f48b2ace9546bc70f5f2e3963a
+  checksum: cdbef43b048c340c5013740b0237c282c2e56fb4ffa3b98935589f06ff3ddb1a19daa57b4b154d1c04026fcf7e1cb39fe024a88f2245f4e6dfc40162cf6be820
   languageName: node
   linkType: hard
 
@@ -4353,9 +4353,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@multiformats/multiaddr@npm:^12.0.0, @multiformats/multiaddr@npm:^12.1.3, @multiformats/multiaddr@npm:^12.1.5, @multiformats/multiaddr@npm:^12.2.1":
-  version: 12.2.1
-  resolution: "@multiformats/multiaddr@npm:12.2.1"
+"@multiformats/multiaddr@npm:^12.0.0, @multiformats/multiaddr@npm:^12.1.3, @multiformats/multiaddr@npm:^12.1.5, @multiformats/multiaddr@npm:^12.2.3":
+  version: 12.2.3
+  resolution: "@multiformats/multiaddr@npm:12.2.3"
   dependencies:
     "@chainsafe/is-ip": ^2.0.1
     "@chainsafe/netmask": ^2.0.0
@@ -4364,7 +4364,7 @@ __metadata:
     multiformats: ^13.0.0
     uint8-varint: ^2.0.1
     uint8arrays: ^5.0.0
-  checksum: 8d0e1e50c80f4baeb088001a37864987e1a0447783a3411c6f7bd678bd3818d1183563a36076a98f3ebbb8d3c81d4203a609dac510a2370c77e450430b44e5ec
+  checksum: c20e8bc2c4d8d483ff5faf610582c2660623f3bf58d3a04970102c22d007f38a6ef5ee4320c51a796a18d842bbc6adc7708536b64a966797b19830642e4b5778
   languageName: node
   linkType: hard
 
@@ -5272,11 +5272,11 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:>=13.7.0":
-  version: 20.12.11
-  resolution: "@types/node@npm:20.12.11"
+  version: 20.12.12
+  resolution: "@types/node@npm:20.12.12"
   dependencies:
     undici-types: ~5.26.4
-  checksum: 0cc06bb69cd8150e96fcf65fa3d7f2eeebedf110a99e1834a7fa55bd6c04e7b6d73f74321a2acfc569ca300c0b88d8e1b702ce245b3802f6e5f6a8987fef451a
+  checksum: 5373983874b9af7c216e7ca5d26b32a8d9829c703a69f1e66f2113598b5be8582c0e009ca97369f1ec9a6282b3f92812208d06eb1e9fc3bd9b939b022303d042
   languageName: node
   linkType: hard
 
@@ -14693,9 +14693,9 @@ __metadata:
   linkType: hard
 
 "utf8-byte-length@npm:^1.0.1":
-  version: 1.0.4
-  resolution: "utf8-byte-length@npm:1.0.4"
-  checksum: f188ca076ec094d58e7009fcc32623c5830c7f0f3e15802bfa4fdd1e759454a481fc4ac05e0fa83b7736e77af628a9ee0e57dcc89683d688fde3811473e42143
+  version: 1.0.5
+  resolution: "utf8-byte-length@npm:1.0.5"
+  checksum: 168edff8f7baca974b5bfb5256cebd57deaef8fbf2d0390301dd1009da52de64774d62f088254c94021e372147b6c938aa82f2318a3a19f9ebd21e48b7f40029
   languageName: node
   linkType: hard
 
